@@ -6,30 +6,34 @@ public abstract class Animal {
     private static int no;
     private boolean register;
 
-    public Animal(String name, String birtday) {
+    public Animal(String name, boolean register, String birtday) {
         this.name = name;
         this.birtday = birtday;
         this.no++;
     }
+
     public abstract void showInformation();
 
     @Override
     public String toString() {
-        /*if (register) {*/
-            return "Pet Name:" + name + '\n' +
+        /* if (register) { */
+        return "Pet Name:" + name + '\n' +
                 "Birtday: " + birtday + '\n' +
-                "Is it registered: " + isRegister()+ " ID Number=" + no;
-        /*}else {
-            return "Pet Name: " + name + '\n' +
-                    "Birtday: " + birtday + '\n' +
-                    "Is it registered: " + isRegister();
-        }*/
+                "Is it registered: " + isRegister() + " ID Number=" + no;
+        /*
+         * }else {
+         * return "Pet Name: " + name + '\n' +
+         * "Birtday: " + birtday + '\n' +
+         * "Is it registered: " + isRegister();
+         * }
+         */
     }
 
     public String isRegister() {
-        if (register){
+        if (register) {
             return "registered";
-        }else return "not registered";
+        } else
+            return "not registered";
     }
 
     public String getName() {
