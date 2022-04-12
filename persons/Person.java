@@ -1,9 +1,8 @@
 package persons;
-import java.util.ArrayList;
 
 public abstract class Person {
-    long idNo;
-    String name;
+    private long idNo;
+    private String name;
 
     public Person(long idNo, String name) {
         this.idNo = idNo;

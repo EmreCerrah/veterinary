@@ -1,9 +1,9 @@
 package pets;
 
 public class Cat extends Animal {
-    String breeds;
-    String type;
-    int vaccines;
+    private String breeds;
+    private String type;
+    private int vaccines;
 
     public Cat(String name, boolean register, String birtday, String breeds) {
         super(name, register, birtday);
